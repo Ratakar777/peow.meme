@@ -1,0 +1,123 @@
+.page {
+    width: 100vw;
+    min-height: 100vh;
+
+    .container {
+        min-height: 100vh;
+        margin: 0 auto;
+        width: 100%;
+        max-width: 1800px;
+
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .header {
+        background-color: #FF00EC;
+        height: 65px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        img {
+            height: 40px;
+            width: 40px;
+        }
+    }
+
+    .content {
+        display: flex;
+        flex-direction: column;
+        flex: 1 1 auto;
+
+        .bg {
+            flex-direction: column;
+            flex: 1 1 auto;
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-image: url("./assets/bg111.png");
+        }
+    }
+
+    .footer {
+        background-color: #FF00EC;
+        height: 48px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        svg {
+            fill: white;
+            height: 18px;
+            width: 18px;
+        }
+
+        .icons {
+            display: flex;
+            gap: 5px;
+        }
+
+        .icon {
+            width: 50px;
+            height: 32px;
+            border: 2px solid white;
+            border-radius: 7px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .icon:hover {
+            background: white;
+
+            svg {
+                fill: black;
+            }
+        }
+    }
+
+    @media screen and (max-width: 768px) {
+
+        .content {
+
+            .bg {
+                background-image: url("./assets/animasi3.gif");
+            }
+        }
+
+        .footer {
+            background-color: transparent;
+
+            flex-direction: column;
+            position: absolute;
+            top: 150px;
+            left: 50%;
+            transform: translateX(-50%);
+            svg {
+            }
+
+            .icons {
+                flex-direction: column;
+
+            }
+
+            .icon {
+                border: none;
+                width: 240px;
+                height: 48px;
+                background: #FF00EC;
+            }
+
+            .icon:hover {
+                background: #FF00EC;
+                opacity: .8;
+                svg {
+                    fill: white;
+                }
+            }
+        }
+
+    }
+}
