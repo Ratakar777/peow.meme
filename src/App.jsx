@@ -1,11 +1,13 @@
 import './App.css'
 import logo from './assets/iconp.jpg';
+import FullingGuns from "./FullingGuns.jsx";
 
 
 function App() {
 
     return (
         <div className="page">
+            <FullingGuns/>
             <div className="container">
                 <div className="header">
                     <a href="/"><img src={logo} alt="logo"/></a>
